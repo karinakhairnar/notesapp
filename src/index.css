@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --color: rgb(141, 6, 6) ;
+  --width: 700px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(241, 241, 241);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar{
+  position: relative;
+  display: grid;
+  margin: 10px auto;
+  max-width: var(--width);
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow:
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.navbar:before{
+  content: '';
+  background: var(--color);
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.navbar ul li{
+  display: inline-block;
+  list-style: none;
+  vertical-align: middle;
+}
+
+.navbar ul li h1, .navbar ul li p{
+  line-height: 20%;
+}
+
+.tasks-list{
+  position: relative;
+  margin: 10px auto;
+  max-width: var(--width);
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow:
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.tasks-list:before{
+  content: '';
+  background: var(--color);
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.add-task{
+  position: relative;
+  margin: 30px auto;
+  max-width: var(--width);
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow:
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.add-task:before{
+  content: '';
+  background: var(--color);
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.add-task h1{
+  margin: 10px 15px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+.add-task h1 svg{
+  color: var(--color);
+  font-size: 24px;
+}
+
+.add-task label,
+.add-task button,
+.add-task input{
+  display: block;
+}
+
+.add-task .task-options{
+  margin: 10px 0px;
+}
+
+.add-task .task-options li{
+  list-style: none;
+  margin: 10px 0px;
+}
+
+.add-task .task-options input[type="text"], .add-task .task-options textarea{
+  outline: none;
+  border: 1px solid var(--color);
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: text;
+  padding: 5px 15px;
+  max-width: 400px;
+  max-height: 200px;
+}
+
+.add-task .task-options button{
+  background: var(--color);
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tasks-list .task{
+  position: relative;
+  border: 1px solid var(--color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 25px 10px;
+  padding: 5px 25px;
+  max-width: 250px;
+  vertical-align: top;
+	-webkit-flex: 1 5 auto;
+	-moz-flex: 1 5 auto;
+	flex: 1 5 auto;
+	align-self: auto;
+}
+
+.tasks-list .task input[type="text"], .tasks-list .task textarea{
+  outline: none;
+  border: 1px solid var(--color);
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: text;
+  padding: 5px 15px;
+  max-width: 150px;
+  max-height: 100px;
+  margin: 5px 0px;
+}
+
+.tasks-list .task-container{
+  margin:20px;
+  padding:10px;
+	display: grid;
+  grid-template-columns: repeat(4,1fr);
+
+}
+
+.tasks-list h1{
+  margin: 10px 15px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+.tasks-list h1 svg{
+  color: var(--color);
+  font-size: 24px;
+}
+
+.tasks-list .task h2{
+  word-wrap: break-word;
+  margin: 0;
+}
+
+.tasks-list .task p{
+  margin: 0;
+}
+
+.tasks-list .task button{
+  background: var(--color);
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.tasks-list .task .small-text{
+  color: rgb(141, 6, 6);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.tasks-list .task .task-content{
+  margin: 25px 10px;
+  line-height: 100%;
+  word-wrap: break-word;
+}
+
+.tasks-list .task .completed{
+  background: var(--color);
+  position: absolute;
+  top: -21px;
+  left: -1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 2;
+}
+
+.tasks-list .task .completed input{
+  display: none;
+}
+
+.tasks-list .task .completed label{
+  cursor: pointer;
+}
+
+.tasks-list .task .completed label span{
+  font-weight: 900;
+}
+
+.tasks-list .task .completed label .todo{
+  color: rgb(252, 255, 66);
+}
+
+.tasks-list .task .completed label .complete{
+  color: rgb(69, 240, 35);
+}
+
+.task-newcontent{
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.delete-btn{
+  background: rgb(141, 6, 6) !important;
+}
