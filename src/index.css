@@ -183,9 +183,11 @@ code {
   padding:10px;
 	display: grid;
   grid-template-columns: repeat(3,1fr);
-
+ 
 }
-
+/* .tasks-list .empty-notes{
+  text-align: center;
+} */
 .tasks-list h1{
   margin: 10px 15px;
   padding-left: 10px;

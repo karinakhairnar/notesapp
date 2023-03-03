@@ -7,8 +7,6 @@ import toast from 'react-hot-toast';
 const TasksList = ({ data }) => {
   const [jsonData, setData] = useGlobalState('data');
 
-  
-
   return (
     <div className='tasks-list'>
       <h1>
@@ -47,6 +45,7 @@ const TasksList = ({ data }) => {
                 </div>
               );
           })}
+          {!data.length && (<span className='empty-notes'> Empty </span>)}
       </div>
     </div>
   );
